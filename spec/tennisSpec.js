@@ -18,7 +18,7 @@ describe('TennisGame', function() {
     expect(tennisGame.currentScore()).toEqual('love-15')
   })
 
-  it('will show Duece when both players tie on 40 points', function() {
+  it('will show Deuce when both players tie on 40 points', function() {
     tennisGame.scorePointPlayer1()
     tennisGame.scorePointPlayer1()
     tennisGame.scorePointPlayer1()
@@ -50,7 +50,7 @@ describe('TennisGame', function() {
     expect(tennisGame.currentScore()).toEqual('Advantage player 2')
   })
 
-  it('will revert to Duece if opposing player scores following Advantage', function() {
+  it('will revert to Deuce if opposing player scores following Advantage', function() {
     tennisGame.scorePointPlayer1()
     tennisGame.scorePointPlayer1()
     tennisGame.scorePointPlayer1()
@@ -84,6 +84,30 @@ describe('TennisGame', function() {
   it('will show player 2 has won if score is 50 and player 1 is 30 or less', function() {
     tennisGame.scorePointPlayer2()
     tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    expect(tennisGame.currentScore()).toEqual('Player 2 wins')
+  })
+
+  it('will show player 1 has won after Advantage player 1', function() {
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    expect(tennisGame.currentScore()).toEqual('Player 1 wins')
+  })
+
+  it('will show player 2 has won after Advantage player 2', function() {
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
     tennisGame.scorePointPlayer2()
     tennisGame.scorePointPlayer2()
     expect(tennisGame.currentScore()).toEqual('Player 2 wins')

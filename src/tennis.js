@@ -27,7 +27,10 @@ function TennisGame(p1,p2){
 
     if(this.player1 == 4 && this.player2 == 4) score = "Deuce"
     if(this.player1 == 4 && this.player2 <= 2) score = "Player 1 wins"
+    if(this.player1 == 5 && this.player2 <= 3) score = "Player 1 wins"
+
     if(this.player2 == 4 && this.player1 <= 2) score = "Player 2 wins"
+    if(this.player2 == 5 && this.player1 <= 3) score = "Player 2 wins"
 
     return score
   }
