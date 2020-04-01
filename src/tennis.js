@@ -5,6 +5,7 @@ function TennisGame(p1,p2){
   TennisGame.prototype.currentScore = function() {
     if(this.player1 == 0) this.player1 = "love"
     if(this.player2 == 0) this.player2 = "love"
+    if(this.player1 == 40 && this.player2 == 40) return "Duece"
     return this.player1 + "-" + this.player2
   }
 

@@ -20,4 +20,16 @@ describe('TennisGame', function() {
     expect(tennisGame.currentScore()).toEqual('love-10')
   })
 
+  it('will show duece when both players tie on 40 points', function() {
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    expect(tennisGame.currentScore()).toEqual('Duece')
+  })
+
 })
