@@ -1,4 +1,4 @@
-function TennisGame(p1,p2){
+function TennisGame(){
   this.player1 = 0
   this.player2 = 0
 
