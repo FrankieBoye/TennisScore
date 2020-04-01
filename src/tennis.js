@@ -2,7 +2,18 @@ function TennisGame(p1,p2){
   this.player1 = 0
   this.player2 = 0
 
-  TennisGame.prototype.initialScore = function() {
+  TennisGame.prototype.currentScore = function() {
     return this.player1 + "-" + this.player2
   }
+
+  TennisGame.prototype.scorePointPlayer1 = function() {
+    this.player1 += 10
+    return this.currentScore
+  }
+
+  TennisGame.prototype.scorePointPlayer2 = function() {
+    this.player2 += 10
+    return this.currentScore
+  }
+
 }
