@@ -2,6 +2,10 @@
 
 'TennisScore' is a simple application that outputs the score for a single game of Tennis.
 
+The points for player 1 and player 2 are manually added and the application returns the score with the correct terminology (love, deuce etc).
+
+The below image was given as an example to base the application on.
+
 ![image](https://user-images.githubusercontent.com/44870179/78070214-51eb8e00-7393-11ea-847a-7c07c085fa4e.png)
 
 ## Getting Started
@@ -28,6 +32,10 @@ To add point for player 2 type:
 TennisGame.scorePointPlayer2()
 ```
 
+Console screenshot:
+
+![image](https://user-images.githubusercontent.com/44870179/78188533-50d86080-7468-11ea-87db-0b79654276c8.png)
+
 ## Rules
 
 1. A game is won by the first player to have won at least four points in total and at least two points more than the opponent.
@@ -39,13 +47,15 @@ TennisGame.scorePointPlayer2()
 
 Tests are carried out using the Jasmine test framework. Copy the full path of SpecRunner.html file and paste this into a web browser address bar to view.
 
+Jasmine screenshot:
+
 ![image](https://user-images.githubusercontent.com/44870179/78186637-f8ec2a80-7464-11ea-869a-9a270d623ab1.png)
 
 ## To do
 
 With more time there are many improvements I would have liked to make to this application. There are also a few issues that need to be addressed.
 
-Firstly the app works as intended when one player wins every point, however if the score goes to Advantage and then back to Deuce the score then doesn't function correctly. I have looked into resolving this but as yet have not been successful.
+Firstly the app works as intended when one player wins every point and if both players score but it doesn't go to Advantage and then back to Deuce. If the latter happens the score then doesn't function correctly. I have looked into resolving this but as yet have not been successful.
 
 I would like the game to stop when one player wins, but currently you can continue adding scores.
 
