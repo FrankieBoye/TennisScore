@@ -37,12 +37,12 @@ function TennisGame(){
 
   TennisGame.prototype.scorePointPlayer1 = function() {
     this.player1 += 1
-    return this.currentScore
+    return this.currentScore()
   }
 
   TennisGame.prototype.scorePointPlayer2 = function() {
     this.player2 += 1
-    return this.currentScore
+    return this.currentScore()
   }
 
 }
