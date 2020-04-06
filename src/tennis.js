@@ -33,6 +33,9 @@ function TennisGame(){
     if(this.player2 == 5 && this.player1 <= 3) score = "Player 2 wins"
 
     return score
+    if(score == "Player 1 wins" || score == "Player 2 wins"){
+      this.stop()
+    }
   }
 
   TennisGame.prototype.scorePointPlayer1 = function() {
@@ -43,6 +46,10 @@ function TennisGame(){
   TennisGame.prototype.scorePointPlayer2 = function() {
     this.player2 += 1
     return this.currentScore()
+  }
+
+  TennisGame.prototype.stop = function() {
+    throw new Error('Game over!')
   }
 
 }
