@@ -32,9 +32,11 @@ To add point for player 2 type:
 TennisGame.scorePointPlayer2()
 ```
 
-Console screenshot of example game:
+Console screenshots of example games:
 
 ![image](https://user-images.githubusercontent.com/44870179/78529186-fe38d480-77d8-11ea-803c-c5472e0032f0.png)
+
+![image](https://user-images.githubusercontent.com/44870179/78531237-f4b16b80-77dc-11ea-88e7-c9577e0d582e.png)
 
 ## Rules
 
@@ -55,6 +57,8 @@ Jasmine screenshot:
 
 With more time there are a few improvements I would have liked to make to this application. There are also a few issues that need to be addressed.
 
-The application works as intended when one player wins every point and if both players score but it doesn't go to Advantage and then back to Deuce. If the latter happens the score then doesn't function correctly. I have looked into resolving this but as yet have not been successful.
+The application works as intended when one player wins every point. It is also fine if both players score and the game doesn't have to go to Advantage and then back to Deuce. Feature testing has shown that if that happens, the score then doesn't function correctly. It reverts to 40-40 and doesn't change. I have looked into resolving this but as yet have not been successful. I will continue to investigate.
+
+I would like to implement some sort of restart function. This would ask the user if they would like to start a new game after one player has won.
 
 It would also be nice to have a front end to interact with the application in addition to the console.
