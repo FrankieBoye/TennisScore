@@ -32,9 +32,9 @@ To add point for player 2 type:
 TennisGame.scorePointPlayer2()
 ```
 
-Console screenshot:
+Console screenshot of example game:
 
-![image](https://user-images.githubusercontent.com/44870179/78188533-50d86080-7468-11ea-87db-0b79654276c8.png)
+![image](https://user-images.githubusercontent.com/44870179/78529186-fe38d480-77d8-11ea-803c-c5472e0032f0.png)
 
 ## Rules
 
@@ -53,10 +53,8 @@ Jasmine screenshot:
 
 ## To do
 
-With more time there are many improvements I would have liked to make to this application. There are also a few issues that need to be addressed.
+With more time there are a few improvements I would have liked to make to this application. There are also a few issues that need to be addressed.
 
-Firstly the app works as intended when one player wins every point and if both players score but it doesn't go to Advantage and then back to Deuce. If the latter happens the score then doesn't function correctly. I have looked into resolving this but as yet have not been successful.
-
-I would like the game to stop when one player wins, but currently you can continue adding scores.
+The application works as intended when one player wins every point and if both players score but it doesn't go to Advantage and then back to Deuce. If the latter happens the score then doesn't function correctly. I have looked into resolving this but as yet have not been successful.
 
 It would also be nice to have a front end to interact with the application in addition to the console.
