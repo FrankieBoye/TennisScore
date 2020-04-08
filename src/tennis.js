@@ -36,11 +36,19 @@ function TennisGame(){
   }
 
   TennisGame.prototype.scorePointPlayer1 = function() {
+    if(this.player2 == 4 && this.player1 == 3){
+      this.player2 -= 1
+      this.player1 -= 1
+    }
     this.player1 += 1
     return this.currentScore()
   }
 
   TennisGame.prototype.scorePointPlayer2 = function() {
+    if(this.player1 == 4 && this.player2 == 3){
+      this.player1 -= 1
+      this.player2 -= 1
+    }
     this.player2 += 1
     return this.currentScore()
   }
