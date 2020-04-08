@@ -56,13 +56,16 @@ Tests are carried out using the Jasmine test framework. Copy the full path of Sp
 
 Jasmine screenshot:
 
-![image](https://user-images.githubusercontent.com/44870179/78186637-f8ec2a80-7464-11ea-869a-9a270d623ab1.png)
+![image](https://user-images.githubusercontent.com/44870179/78814477-98aa3b00-79c6-11ea-9838-b5b1e5bf2765.png)
 
 ## Updates
 
-I had an issue going from Deuce to Advantage and back which I have now dealt with by adding additional code to the scorePoint functions. I have feature tested this and all ok.
+I have added Game Point and Match Point functions. If player 1 can win the game by scoring the next point then the score is displayed along with the text "Game Point". If player 2 can win the game by winning the next point then the score is displayed with the text "Break Point".
 
-![image](https://user-images.githubusercontent.com/44870179/78757007-b13d3580-7973-11ea-8050-cae4596356b6.png)
+For the purposes of this application, we will assume that player 1 is always serving.
+
+![image](https://user-images.githubusercontent.com/44870179/78814866-4a496c00-79c7-11ea-9018-7bbb7e5f9e6d.png)
+
 
 ## To do
 
