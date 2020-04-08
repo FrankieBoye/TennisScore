@@ -58,11 +58,15 @@ Jasmine screenshot:
 
 ![image](https://user-images.githubusercontent.com/44870179/78186637-f8ec2a80-7464-11ea-869a-9a270d623ab1.png)
 
+## Updates
+
+I had an issue going from Deuce to Advantage and back which I have now dealt with by adding additional code to the scorePoint functions. I have feature tested this and all ok.
+
+![image](https://user-images.githubusercontent.com/44870179/78757007-b13d3580-7973-11ea-8050-cae4596356b6.png)
+
 ## To do
 
-With more time there are a few improvements I would have liked to make to this application. There are also a few issues that need to be addressed.
-
-As can be seen form the screenshot above, all the unit tests are passing. The application works as intended when one player wins every point. It is also fine if both players score and the game doesn't have to go to Advantage and then back to Deuce. Feature testing has shown that if that happens, the score then doesn't function correctly. It reverts to 40-40 and doesn't change. I have looked into resolving this but as yet have not been successful. I will continue to investigate.
+With more time there are a few improvements I would have liked to make to this application.
 
 I would like to implement some sort of restart function. This would ask the user if they would like to start a new game after one player has won.
 
