@@ -113,4 +113,18 @@ describe('TennisGame', function() {
     expect(tennisGame.currentScore()).toEqual('Player 2 wins')
   })
 
+  it('will show game point if player 1 is about to serve to win', function() {
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    expect(tennisGame.gamePoint()).toEqual(true)
+  })
+
+  it('will show break point if player 2 is about to receive serve to win', function() {
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer2()
+    expect(tennisGame.breakPoint()).toEqual(true)
+  })
+
 })

@@ -32,6 +32,14 @@ function TennisGame(){
     if(this.player2 == 4 && this.player1 <= 2) score = "Player 2 wins"
     if(this.player2 == 5 && this.player1 <= 3) score = "Player 2 wins"
 
+    if(this.gamePoint() == true){
+      return score + " Game Point"
+    }
+
+    if(this.breakPoint() == true){
+      return score + " Break Point"
+    }
+
     return score
   }
 
@@ -51,6 +59,20 @@ function TennisGame(){
     }
     this.player2 += 1
     return this.currentScore()
+  }
+
+  TennisGame.prototype.gamePoint = function() {
+    if(this.player1 == 3 && this.player2 == 0 || this.player1 == 3 && this.player2 == 1 || this.player1 == 3 && this.player2 == 2) {
+      return true
+    }
+    return false
+  }
+
+  TennisGame.prototype.breakPoint = function() {
+    if(this.player2 == 3 && this.player1 == 0 || this.player2 == 3 && this.player1 == 1 || this.player2 == 3 && this.player1 == 2) {
+      return true
+    }
+    return false
   }
 
 }
