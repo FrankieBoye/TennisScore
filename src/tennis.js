@@ -24,13 +24,8 @@ function TennisGame(){
     if(this.player1 == 3 && this.player2 == 3) score = "Deuce"
     if(this.player1 == 4 && this.player2 == 3) score = "Advantage player 1"
     if(this.player1 == 3 && this.player2 == 4) score = "Advantage player 2"
-
-    if(this.player1 == 4 && this.player2 == 4) score = "Deuce"
-    if(this.player1 == 4 && this.player2 <= 2) score = "Player 1 wins"
-    if(this.player1 == 5 && this.player2 <= 3) score = "Player 1 wins"
-
-    if(this.player2 == 4 && this.player1 <= 2) score = "Player 2 wins"
-    if(this.player2 == 5 && this.player1 <= 3) score = "Player 2 wins"
+    if(this.player1 == 4 && this.player2 <= 2 || this.player1 == 5 && this.player2 <= 3) score = "Player 1 wins"
+    if(this.player2 == 4 && this.player1 <= 2 || this.player2 == 5 && this.player1 <= 3) score = "Player 2 wins"
 
     if(this.gamePoint() == true){
       return score + " Game Point"
@@ -39,7 +34,6 @@ function TennisGame(){
     if(this.breakPoint() == true){
       return score + " Break Point"
     }
-
     return score
   }
 
@@ -62,17 +56,16 @@ function TennisGame(){
   }
 
   TennisGame.prototype.gamePoint = function() {
-    if(this.player1 == 3 && this.player2 == 0 || this.player1 == 3 && this.player2 == 1 || this.player1 == 3 && this.player2 == 2) {
+    if(this.player1 == 3 && this.player2 <= 2) {
       return true
     }
     return false
   }
 
   TennisGame.prototype.breakPoint = function() {
-    if(this.player2 == 3 && this.player1 == 0 || this.player2 == 3 && this.player1 == 1 || this.player2 == 3 && this.player1 == 2) {
+    if(this.player2 == 3 && this.player1 <= 2) {
       return true
     }
     return false
   }
-
 }
