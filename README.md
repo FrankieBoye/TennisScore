@@ -71,11 +71,11 @@ For the purposes of this application, we will assume that player 1 is always ser
 
 I have created a basic interface to interact with the application without using the console.
 
-![image](https://user-images.githubusercontent.com/44870179/80863106-cc991900-8c71-11ea-80fd-70c33929c147.png)
+![image](https://user-images.githubusercontent.com/44870179/80892054-1f012680-8cc0-11ea-8edc-c7e9e7f3ddbc.png)
 
-Open the tennis.html file and then add scores to the required player by pressing the buttons as shown in the screenshot above.
+Open the tennis.html file and then add scores to the required player by pressing the player buttons. The screenshot above shows player 1 winning the first point.
 
 
 |      TECH STACK                                      |
 |    :------:                                          |
-|JavaScript \| Jasmine \| jQuery \|
+|JavaScript \| Jasmine \| jQuery |
