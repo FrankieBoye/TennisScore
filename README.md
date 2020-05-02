@@ -67,15 +67,15 @@ For the purposes of this application, we will assume that player 1 is always ser
 ![image](https://user-images.githubusercontent.com/44870179/78814866-4a496c00-79c7-11ea-9018-7bbb7e5f9e6d.png)
 
 
-## To do
+## Interface
 
-With more time there are a few improvements I would have liked to make to this application.
+I have created a basic interface to interact with the application without using the console.
 
-I would like to implement some sort of restart function. This would ask the user if they would like to start a new game after one player has won.
+![image](https://user-images.githubusercontent.com/44870179/80863106-cc991900-8c71-11ea-80fd-70c33929c147.png)
 
-It would also be nice to have a front end to interact with the application in addition to the console.
+Open the tennis.html file and then add scores to the required player by pressing the buttons as shown in the screenshot above.
 
 
 |      TECH STACK                                      |
 |    :------:                                          |
-|JavaScript \| Jasmine|
+|JavaScript \| Jasmine \| jQuery \|
