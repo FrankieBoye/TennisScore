@@ -42,9 +42,7 @@ This should not be needed as the application will display the current score when
 
 ```
 
-Console screenshots of example games:
-
-![image](https://user-images.githubusercontent.com/44870179/78529186-fe38d480-77d8-11ea-803c-c5472e0032f0.png)
+Console screenshots of example game:
 
 ![image](https://user-images.githubusercontent.com/44870179/78531237-f4b16b80-77dc-11ea-88e7-c9577e0d582e.png)
 
@@ -69,9 +67,9 @@ For the purposes of this application, we will assume that player 1 is always ser
 
 ## Interface
 
-I have created an interface to interact with the application without using the console. It has a fully responsive background image and score reset function.
+I have created an interface to interact with the application without using the console. It has a fully responsive background image and a score reset function.
 
-![image](https://user-images.githubusercontent.com/44870179/80908761-792ed580-8d1a-11ea-8496-9878d4c453df.png)
+![image](https://user-images.githubusercontent.com/44870179/80923367-2f2a0c00-8d7b-11ea-91dd-83435407a6fd.png)
 
 Open the tennis.html file and then add scores to the required player by pressing the player buttons. The screenshot above shows player 1 winning the first 2 points.
 
