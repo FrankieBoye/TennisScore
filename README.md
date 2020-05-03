@@ -56,7 +56,7 @@ Tests are carried out using the Jasmine test framework. Copy the full path of Sp
 
 Jasmine screenshot:
 
-![image](https://user-images.githubusercontent.com/44870179/78814477-98aa3b00-79c6-11ea-9838-b5b1e5bf2765.png)
+![image](https://user-images.githubusercontent.com/44870179/80908736-4f75ae80-8d1a-11ea-96da-f235708011c9.png)
 
 ## Updates
 
@@ -69,11 +69,11 @@ For the purposes of this application, we will assume that player 1 is always ser
 
 ## Interface
 
-I have created a basic interface to interact with the application without using the console.
+I have created an interface to interact with the application without using the console. It has a fully responsive background image and score reset function.
 
-![image](https://user-images.githubusercontent.com/44870179/80892054-1f012680-8cc0-11ea-8edc-c7e9e7f3ddbc.png)
+![image](https://user-images.githubusercontent.com/44870179/80908761-792ed580-8d1a-11ea-8496-9878d4c453df.png)
 
-Open the tennis.html file and then add scores to the required player by pressing the player buttons. The screenshot above shows player 1 winning the first point.
+Open the tennis.html file and then add scores to the required player by pressing the player buttons. The screenshot above shows player 1 winning the first 2 points.
 
 
 |      TECH STACK                                      |
