@@ -1,6 +1,6 @@
 $(document).ready(function() {
   tennisGame = new TennisGame()
-  $('#scores').text('Tennis Game')
+  $('#scores').text('Tennis Game Scorer')
 
   $('#Player1').on('click', function() {
     tennisGame.scorePointPlayer1()
@@ -11,5 +11,5 @@ $(document).ready(function() {
     tennisGame.scorePointPlayer2()
     $('#currentScore').text(tennisGame.currentScore())
   })
-
+  
 })
