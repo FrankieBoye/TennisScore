@@ -127,4 +127,11 @@ describe('TennisGame', function() {
     expect(tennisGame.breakPoint()).toEqual(true)
   })
 
+  it('has a score reset function', function() {
+    tennisGame.scorePointPlayer2()
+    tennisGame.scorePointPlayer1()
+    tennisGame.scorePointPlayer1()
+    expect(tennisGame.reset()).toEqual('love-love')
+  })
+
 })

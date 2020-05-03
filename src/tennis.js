@@ -68,4 +68,11 @@ function TennisGame(){
     }
     return false
   }
+
+  TennisGame.prototype.reset = function() {
+    this.player1 = 0
+    this.player2 = 0
+    return this.currentScore()
+  }
+
 }

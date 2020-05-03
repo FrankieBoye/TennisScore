@@ -11,5 +11,10 @@ $(document).ready(function() {
     tennisGame.scorePointPlayer2()
     $('#currentScore').text(tennisGame.currentScore())
   })
-  
+
+  $('#Reset').on('click', function() {
+    tennisGame.reset()
+    $('#currentScore').text(tennisGame.currentScore())
+  })
+
 })
