@@ -54,7 +54,7 @@ Tests are carried out using the Jasmine test framework. Copy the full path of Sp
 
 Jasmine screenshot:
 
-![image](https://user-images.githubusercontent.com/44870179/80908736-4f75ae80-8d1a-11ea-96da-f235708011c9.png)
+![image](https://user-images.githubusercontent.com/44870179/80993566-2f85de00-8e33-11ea-97bc-c59685d09e81.png)
 
 ## Updates
 
@@ -71,7 +71,7 @@ I have created an interface to interact with the application without using the c
 
 ![image](https://user-images.githubusercontent.com/44870179/80923367-2f2a0c00-8d7b-11ea-91dd-83435407a6fd.png)
 
-Open the tennis.html file and then add scores to the required player by pressing the player buttons. The screenshot above shows player 1 winning the first 2 points.
+Open the tennis.html file and then add scores to the required player by pressing the player buttons. The screenshot above shows player 1 winning the first 2 points. The player 1 and player 2 score buttons will automatically be greyed out when a player has won the game.
 
 
 |      TECH STACK                                      |
