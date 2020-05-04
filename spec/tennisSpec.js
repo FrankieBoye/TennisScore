@@ -62,17 +62,6 @@ describe('TennisGame', function() {
     expect(tennisGame.currentScore()).toEqual('Deuce')
   })
 
-  it('will show Advantage player1 if player 1 scores following Deuce', function() {
-    tennisGame.scorePointPlayer1()
-    tennisGame.scorePointPlayer1()
-    tennisGame.scorePointPlayer1()
-    tennisGame.scorePointPlayer2()
-    tennisGame.scorePointPlayer2()
-    tennisGame.scorePointPlayer2()
-    tennisGame.scorePointPlayer1()
-    expect(tennisGame.currentScore()).toEqual('Advantage player 1')
-  })
-
   it('will show player 1 has won if score is 50 and player 2 is 30 or less', function() {
     tennisGame.scorePointPlayer1()
     tennisGame.scorePointPlayer1()
