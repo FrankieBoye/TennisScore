@@ -73,6 +73,10 @@ I have created an interface to interact with the application without using the c
 
 Open the tennis.html file and then add scores to the required player by pressing the player buttons. The screenshot above shows player 1 winning the first 2 points. The player 1 and player 2 score buttons will automatically be greyed out when a player has won the game.
 
+Alternatively click on the link below and test the application out that way!
+
+https://tennis-scorer.herokuapp.com/
+
 
 |      TECH STACK                                      |
 |    :------:                                          |
